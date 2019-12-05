@@ -69,6 +69,11 @@ public class MainMenuUser extends TestGui {
 		btnLoadItems.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {					//TODO: Add function to load current items from database
 				
+				for(int i = 0; i < invent.size(); i++)
+				{
+					System.out.println("Item: " + invent.get(i).getName() + 
+							"\nAmount: " + invent.get(i).getAmount() + "\n");
+				}
 				
 			}
 		});
